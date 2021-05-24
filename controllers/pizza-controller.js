@@ -8,7 +8,7 @@ const pizzaController = {
             .catch(err => {
                 console.log(err);
                 res.status(400).json(err);
-            })l;
+            });
     },
 
     // get one pizza by id
