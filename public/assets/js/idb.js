@@ -41,7 +41,8 @@ function uploadPizza() {
     
     const getAll = pizzaObjectStore.getAll();
 
-    getAll.onsucess = function() {
+    getAll.onsuccess = function() {
+        console.log('hi')
         if(getAll.result.length > 0) {
             fetch('/api/pizzas', {
                 method: 'POST',
